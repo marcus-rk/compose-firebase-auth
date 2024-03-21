@@ -13,10 +13,10 @@ fun Navigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = "welcome") {
         composable("welcome") {
-            Welcome(getStarted = { navController.navigate("register") })
+            Welcome(getStarted = {navController.navigate("register")})
         }
         composable("register") {
-            Login(onSuccess = { navController.navigate("success") })
+            Login(onRegistrationSuccess = { navController.navigate("success") })
         }
         composable("success") {
             Success()

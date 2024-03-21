@@ -6,14 +6,17 @@ import com.google.firebase.auth.auth
 class AccountService {
     fun authenticate(email: String, password: String, onResult: () -> Unit) {
         Firebase.auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener {
+            .addOnSuccessListener {
                 onResult()
+            }
+            .addOnFailureListener {
+                /* TODO */
             }
     }
 
-    fun login(email: String, password: String, onResult: (Throwable?) -> Unit) {
+    fun login(email: String, password: String, onResult: () -> Unit) {
         Firebase.auth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener {
+            .addOnSuccessListener {
                 /*TODO*/
             }
     }
