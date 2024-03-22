@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "845719461609",
+    "project_id": "compose-firebase-auth-2ff01",
+    "storage_bucket": "compose-firebase-auth-2ff01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845719461609:android:3e4a60bca92f45e81ada78",
+        "android_client_info": {
+          "package_name": "com.example.auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjHCtfNUAHEM7TCLLtC1P1dFeeP4zfPPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

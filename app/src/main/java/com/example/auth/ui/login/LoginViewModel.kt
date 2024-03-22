@@ -23,7 +23,11 @@ class LoginViewModel : ViewModel() {
         this.password = password;
     }
 
-    fun registerNewUser(navigateOnSuccess: () -> Unit) {
-        accountService.authenticate(username, password, navigateOnSuccess)
+    fun registerNewUser(navigateOnSuccess: () -> Unit, navigateOnFail: () -> Unit) {
+        accountService.authenticate(username, password, navigateOnSuccess, navigateOnFail)
+    }
+
+    fun loginUser(navigateOnSuccess: () -> Unit, navigateOnFail: () -> Unit) {
+        accountService.login(username, password, navigateOnSuccess, navigateOnFail)
     }
 }
